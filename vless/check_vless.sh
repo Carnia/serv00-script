@@ -1,5 +1,5 @@
 #!/bin/bash
-
+alias pm2="~/.npm-global/bin/pm2"
 # ANSI颜色码
 GREEN='\033[0;32m'
 NC='\033[0m'  # 恢复默认颜色
@@ -165,7 +165,6 @@ main() {
             echo -e "config.json 文件不存在或格式错误。"
         fi
         echo "开始检查pm2 vless进程..."
-        cd ~/domains/$USER.serv00.net/vless
         check_pm2_vless_status
     fi
 
