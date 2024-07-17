@@ -1,5 +1,5 @@
-#!/bin/bash
-alias pm2="~/.npm-global/bin/pm2"
+#!/sh
+
 # ANSI颜色码
 GREEN='\033[0;32m'
 NC='\033[0m'  # 恢复默认颜色
@@ -97,7 +97,7 @@ start_pm2_vless_process() {
 }
 # 检查vless的状态
 check_vless_status() {
-    status=$(pm2 status vless | grep -w 'vless' | awk '{print $18}')
+    status=$(~/.npm-global/bin/pm2  status vless | grep -w 'vless' | awk '{print $18}')
     if [[ "$status" == "online" ]]; then
         echo "vless进程正在运行。"
     else
