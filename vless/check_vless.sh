@@ -1,4 +1,4 @@
-#!/sh
+#!/bin/bash
 
 # ANSI颜色码
 GREEN='\033[0;32m'
